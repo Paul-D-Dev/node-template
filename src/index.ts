@@ -3,6 +3,8 @@ import 'reflect-metadata';
 import { UserController } from './controller/user.controller';
 import loaders from './loaders';
 
+import { UserController } from './controller/user.controller';
+
 async function startServer() {
     // Récupération de l'application initiale
     const app = express();

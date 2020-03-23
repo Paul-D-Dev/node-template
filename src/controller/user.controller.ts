@@ -1,5 +1,5 @@
 import { commonController } from './../core/common_functions.controller';
-import { Application, Router, Request, Response } from 'express';
+import express, { Application, Router, Request, Response } from 'express';
 import { UserService } from '../services/user.service';
 
 /**
@@ -10,6 +10,7 @@ import { UserService } from '../services/user.service';
  * @param app l'application express
  */
 export const UserController = (app: Application) => {
+
   const userService = new UserService();
 
   let userRouter = Router();
